@@ -106,4 +106,4 @@ client.on('messageDelete', async(message) => {
     require('./Events/guild/messageDelete')(message)
 })
 
-client.login(token);
+client.login(config.token);
