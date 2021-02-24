@@ -24,7 +24,7 @@ module.exports = {
         let embed = new Discord.MessageEmbed()
             .setColor(role.color)
             .setAuthor(message.guild.name,message.guild.iconURL())
-            .setDescription(`**Role Name:** ${role.name}(<@&${role.id}>)\n\n**Role ID:** **\`${role.id}\`**\n\n**Role Mentionable:** ${role.mentionable.toString().replace("true","Yes").replace("false","No")}\n\n**Role Members Size:** ${role.members.size || 0}`)
+            .setDescription(`**Role Name:** ${role.name}(<@&${role.id}>)\n\n**Role ID:** **\`${role.id}\`**\n\n**Role Mentionable:** ${role.mentionable.toString().replace("true","Yes").replace("false","No")}\n\n**Role Members Size:** ${role.members.size || 0}\n\n**Role Color:** ${role.hexColor}\n\n**Role Position:** ${role.rawPosition}`)
             .addField("Role Members:",rolemembers || "Not Found")
 
         message.channel.send(embed)
