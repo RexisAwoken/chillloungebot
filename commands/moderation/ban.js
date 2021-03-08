@@ -8,7 +8,7 @@ module.exports = {
         if(!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("You don't have permission to ban members.");
         let toBan = message.mentions.members.first();
         let reason = args.slice(1).join(" ");
-        if(!args[0]) return message.channel.send('Please mention someone to ban');
+        if(!args[0]) return message.channel.send('Please mention someone to bann');
         if(!toBan) return message.channel.send(`${args[0]} is not a member.`);
         if(!reason) return message.channel.send('Specify a reason.');
  
