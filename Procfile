@@ -1,1 +1,1 @@
-Worker: pm2 start chill.js
+Worker: node chill.js
