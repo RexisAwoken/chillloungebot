@@ -19,7 +19,7 @@ const config = {
 
 
 
-const activity = ["c!help", "Coded By Awoken#0002"];
+const activity = ["c!help", "Coded By Awoken#3698"];
 const Timeout = new Set();
 
 client.commands = new Discord.Collection();
